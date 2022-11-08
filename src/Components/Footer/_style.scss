@@ -1,0 +1,164 @@
+footer{
+    margin-top: 75px !important;
+    height: auto !important;
+    background:#1c1c23;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .inner-newsletter{
+        width: 90%;
+        margin-top: 55px !important;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        .typography{
+            .top-title{
+                margin-bottom: 14px !important;
+                margin-left: auto;
+                margin-right: auto;
+                font-weight: 700;
+                font-size: 24px;
+            }
+            .bottom-title{
+                color: #fff;
+                display: block;
+                text-transform: capitalize;
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+        .handling-control{
+            display: flex;
+            align-items: center;
+            .input-col{
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 300px;
+                height: 55px;
+                background: #fff;
+                input{
+                    display: flex;
+                    align-items: center;
+                    width: 90%;
+                    height: 55px;
+                    box-shadow: none;
+                    border: none;
+                }
+            }
+            .subscribe-button{
+                background: #7869E6;
+                color: #fff;
+                border: none;
+                position: relative;
+                left: -15px;
+                width: 150px;
+                height: 55px;
+            }
+        }
+    }
+    .inner-lists{
+        width: 100%;
+        margin-top: 85px !important;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        .title{
+            margin-bottom: 14px !important;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 700;
+            font-size: 24px;
+        }
+        .lists-col{
+            width: 20%;
+        }
+        .about-us{
+            width: 30%;
+            .icons-group{
+               display: flex;
+               margin-top: 15px !important;
+               grid-gap: 15px;
+               *{
+                cursor: pointer;
+               }
+            }
+        }
+    }
+    .footer-bottom{
+        margin-top: 25px !important;
+        background:#18181E;
+        height:90px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* Media Rules */
+@media (max-width:992px){
+    footer{
+        .inner-newsletter{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            grid-gap: 15px;
+        }
+        .inner-lists{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            grid-gap: 45px !important;
+           .lists-col{
+                width: 70%;
+           }
+           .about-us{
+                width: 70%;
+           }
+        }
+    }
+}
+@media (max-width:473px){
+    footer{
+        .inner-newsletter{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            grid-gap: 15px;
+            .handling-control{
+                width: 80%;
+                align-items: center !important;
+                justify-content: center !important;
+                .input-col{
+                    width: 100% !important;
+                    input{
+                        width: 100% !important;
+                    }
+                }
+                .subscribe-button{
+                    font-size: 12px !important;
+                }
+            }
+        }
+        .inner-lists{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            grid-gap: 45px !important;
+           .lists-col{
+                width: 70%;
+           }
+           .about-us{
+                width: 70%;
+           }
+        }
+    }
+}

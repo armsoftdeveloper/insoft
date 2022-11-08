@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+.why-trust-us{
+    margin-top: 145px !important;
+    img{
+        height: 500px;
+    }
+    .inner-why-trust-us{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .typographys-container{
+            width: 50% !important;
+            display: flex;
+            flex-direction: column;
+            .title-top{
+                font-size: 16px;
+                font-weight: 700;
+                color: #FF9800;
+                letter-spacing: 0.5px;
+                text-transform: uppercase;
+                font-family: 'Source Sans Pro', sans-serif;
+            }
+            .title-bottom{
+                font-size: 38px;
+                color: #0b0b31;
+                font-family: 'Dosis', sans-serif;
+                font-weight: 700;
+                line-height: 1.4;
+            }
+            .typography{
+                font-size: 15px;
+                line-height: 1.8;
+                color: #5f5f5f;
+                margin-bottom: 15px;
+                font-weight: 400;
+                letter-spacing: 0.3px;
+            }
+            .spans-parent{
+                margin-top: 55px !important;
+                display: flex;
+                grid-gap: 25px;
+                align-items: center;
+                flex-wrap: wrap;
+                width: 550px;
+                .block-span{
+                    height: 50px;
+                    width: 250px;
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    background-color: #FCFCFC;
+                    border-radius: 5px;
+                    padding: 15px 15px !important;
+                    z-index: 1;
+                    position: relative;
+                    transition: 0.4s;
+                    color: #0b0b31;
+                    border-left: 2px solid #7b68ee;
+                    font-weight: 600;
+                    font-size: 18px;
+                    transition: 0.4s;
+                    background: linear-gradient(to right, #7869E6 50%, white 50%);
+                    background-position: right bottom !important;
+                    transition: all .5s ease-out !important;
+                    background-size: 200% 100%;
+                }
+                .block-span:hover{
+                    background-position: left bottom !important;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+/* Media Rules */
+@media (max-width:1200px){
+    .why-trust-us{
+        .inner-why-trust-us{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            .typographys-container{
+                align-items: center;
+            }
+        }
+    }   
+}
+
+@media (max-width:768px){
+    .why-trust-us{
+        img{
+            height: 250px;
+        }
+        .inner-why-trust-us{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            .typographys-container{
+                align-items: center;
+                width: 100%;
+                .spans-parent{
+                    width: 100%;
+                    flex-direction: column;
+                    .block-span{
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }   
+}

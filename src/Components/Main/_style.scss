@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&family=Source+Sans+Pro&display=swap');
+main{
+    display: flex;
+    align-items: center;
+    height: auto !important;
+    flex-direction: column;
+    margin-top: 45px !important;
+    color:#fff;
+    .inner-main{
+        display: flex;
+        align-items: center;
+        height: auto;
+        .typography{
+            width: 100%;
+            .inner-typography{
+                text-align: center;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                grid-gap: 15px;
+                .about-us-title{
+                    font-size: 32px;
+                }
+            }
+        }
+        .btn-group{
+            display: flex;
+            grid-gap: 35px;
+            margin: 24px !important;
+            margin-top: 25px !important;
+            justify-content: center;
+            button{
+                font-family: 'Paytone One', sans-serif;
+                font-family: 'Source Sans Pro', sans-serif;
+                text-transform: capitalize;
+                background: #7869E6;
+                color: #fff;
+                height: 45px;
+                font-size: 18px;
+                width: 150px;
+            }
+            button:nth-child(1){
+                background: white;
+                color: gray;
+            }
+            button:nth-child(2){
+                background: #7869E6;
+                color: #fff;
+            }
+        }
+        .image-container{
+            display: flex;
+            justify-content: center;
+            img{
+                animation: my 3s linear infinite;
+            }
+        }
+    }
+}
+/***** Animation *****/
+@keyframes my{
+    0%{
+        position: relative;
+        top: 0px;
+    }
+    25%{
+        position: relative;
+        top:5px;
+    }
+    50%{
+        position: relative;
+        top: -10px;
+    }
+    75%{
+        position: relative;
+        top: 5px;
+    }
+    100%{
+        position: relative;
+        top: 0px;
+    }
+}
+/***** Media Queries *****/
+@media (max-width:992px){
+    main{
+        .inner-main{
+            flex-direction: column;
+            display: flex;
+            align-items: center !important;
+            justify-content: center !important;
+            .btn-group{
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media (max-width:768px){
+    main{
+        .inner-main{
+            .image-container{
+                img{
+                    height: 300px;
+                }
+            }
+        }
+    }
+}
+@media (max-width:374px){
+    main{
+        .inner-typography{
+            padding: 15px !important;
+        }
+    }
+}

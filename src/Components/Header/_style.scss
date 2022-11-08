@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300&family=Dosis:wght@500&display=swap');
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .header-top{
+        background: linear-gradient(to bottom, #370b6f, #00429b, #006dba, #0095ce, #2dbcdc);
+        display: flex;
+        flex-direction: column;
+        .logo{
+            color: #fff;
+            font-size: 36px;
+            font-weight: bold;
+            font-family: 'Paytone One', sans-serif;
+            font-family: 'Source Sans Pro', sans-serif;
+            cursor: pointer;
+        }
+        .lists{
+            padding: 15px !important;
+            margin-top: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            z-index: 10 !important;
+            ul{
+                display: flex;
+                align-items: center;
+                width: 50%;
+                margin: 0px !important;
+                padding: 0px !important;
+                li{
+                    cursor: pointer;
+                    a{
+                        width: 100% !important;
+                        text-align: center;
+                        text-transform: capitalize;
+                        color: #fff;
+                        text-decoration: none;
+                        font-family: 'Paytone One', sans-serif;
+                        font-family: 'Source Sans Pro', sans-serif;
+                        font-size: 18px;
+                        transition: 0.3s all;
+                    }
+                    a:hover{
+                        color: #4356C9;
+                    }
+                }
+            }
+            
+            .menu-icon{
+                color: #fff;
+                cursor: pointer;
+            }
+        }
+        .lists-button{
+            font-family: 'Paytone One', sans-serif;
+            font-family: 'Source Sans Pro', sans-serif;
+            text-transform: capitalize;
+            background: #7869E6;
+            color: #fff;
+            height: 45px;
+            font-size: 18px;
+            width: 150px;
+        }
+        .lists-button:hover{
+            background: #4356C9;
+        }
+    }
+    .visible-container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        grid-gap: 15px;
+        padding: 15px !important;
+        border-radius: 5px;
+        background: #fff;
+        ul{
+            display: flex;
+            flex-direction: column;
+            grid-gap: 15px;
+            align-items: center;
+            width: 50%;
+            font-family: 'Catamaran', sans-serif;
+            font-family: 'Dosis', sans-serif;
+            li{
+                cursor: pointer;
+                a{
+                    color: #000 !important;
+                    width: 100% !important;
+                    text-align: center;
+                    text-transform: capitalize;
+                    color: #fff;
+                    text-decoration: none;
+                    font-family: 'Paytone One', sans-serif;
+                    font-family: 'Source Sans Pro', sans-serif;
+                    font-size: 18px;
+                    transition: 0.3s all;
+                }
+                a:hover{
+                    color: #4356C9;
+                }
+            }
+        }
+    }
+    #show{
+        display: flex !important;
+    }
+    #hidden{
+        display: none !important;
+    }
+    .header-bottom-image{
+        margin-top: -145px !important;
+        .wave{
+            width: 100% !important;
+        }
+    }
+}
+/***** Media Queries *****/
+@media (max-width:1290px){
+    header{
+        height: auto;
+        .header-bottom{
+            margin-top: -37vw !important;
+        }
+    }
+}
+@media (min-width:992px){
+    header{
+        height: 900px !important;
+    }
+    .menu-icon{
+        display:none !important;
+    }
+}
+@media (max-width:992px){
+    .lists{
+        display: flex !important; 
+        justify-content: space-between !important;
+    }
+    .hidden{
+        display: none !important;
+    }
+    .menu-icon{
+        display:block !important;
+    }
+}
+
+#hidden-container{
+    display: none !important;
+}
+#visible-container{
+    display: flex !important;
+}

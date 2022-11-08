@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+.counter{
+    background:url("../../../../Assets/Images/Article/Sections/Counter/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    padding:56px !important;
+    align-items: center;
+    justify-content: space-between;
+    filter: brightness(0.7);
+    text-transform: capitalize;
+    .inner-counter-box{
+        height: 55px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #FFF;
+        text-align: center;
+        h2{
+            font-size: 45px;
+            font-family: 'Dosis', sans-serif;
+            font-weight: 700;
+        }
+        h3{
+            color: #FFF;
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+}
+
+/* Media Rules */
+@media (max-width:768px){
+    .counter{
+        .inner-counter-box{
+            h2{
+                font-size: 25px;
+                font-family: 'Dosis', sans-serif;
+                font-weight: 700;
+            }
+            h3{
+                color: #FFF;
+                font-size: 14px;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+@media (max-width:425px){
+    .counter{
+        padding: 22px !important;
+        .inner-counter-box{
+            h2{
+                font-size: 20px;
+                font-family: 'Dosis', sans-serif;
+                font-weight: 700;
+            }
+            h3{
+                color: #FFF;
+                font-size: 12px;
+                font-weight: 700;
+            }
+        }
+    }
+}
