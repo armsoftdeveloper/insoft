@@ -16,7 +16,8 @@ import { useSelector } from "react-redux";
 import MenuIcon from '@mui/icons-material/Menu';
 /***** Images *****/
 import Wave from "../../Assets/Images/Header/wave.png";
-import "./anim.js"
+/***** Topbar Animation *****/
+import "./Anim.js"
 export default function Header(){
     const data = useSelector((state)=>state);
     const [toggle, setToggle] = useState(false)
@@ -24,7 +25,7 @@ export default function Header(){
         <header className="container-fluid col-12">
             <Container className="header-top" maxWidth="100">
                 <Box className="lists container-fluid anim-lists">
-                    <span className="logo anim-color">Company.com</span>
+                    <span className="logo anim-color">InSoft</span>
                     <List className="hidden">
                         {data.lists.map((items,index)=>{
                             return(
@@ -50,10 +51,10 @@ export default function Header(){
                     <Button className="lists-button">Get It Support</Button>
                 </Box>
                 <Main/>
-                <Box className="header-bottom-image">
-                    <img src={Wave} alt="" className="wave"/>
-                </Box>
             </Container>
+            <Box className="header-bottom-image">
+                <img src={Wave} alt="Wave Image" className="wave"/>
+            </Box>
         </header>
     )
 }

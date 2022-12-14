@@ -11,17 +11,14 @@ export default function Typographys(){
             <Typography className="title-top">{data.article[0].chooseUs[0].title}</Typography>
             <Typography className="title-bottom">{data.article[0].chooseUs[0].titleBottom}</Typography>
             <Typography className="typography">{data.article[0].chooseUs[0].text}</Typography>
-            <Box className="spans-parent">
-                {data.article[0].chooseUs[0].spansTop.map((items,key)=>{
-                    return (
-                        <span className="block-span" id={key}>{items}</span>
-                    )
-                })}
-                {data.article[0].chooseUs[0].spansBottom.map((items,key)=>{
-                    return (
-                        <span className="block-span" id={key}>{items}</span>
-                    )
-                })}
+            <Box className="d-flex">
+                <Box className="spans-parent">
+                    {data.article[0].chooseUs[0].spansTop.map((items,index)=>{
+                        return (
+                            <div className="block-span" key={index}>{items}</div>
+                        )
+                    })}
+                </Box>
             </Box>
         </Box>
     )

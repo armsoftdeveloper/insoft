@@ -15,7 +15,7 @@ export default function Team(){
             <Box className="inner-team mt-5">
             {data.article[0].team.map((items,index)=>{
                 return (
-                        <>
+                        <Box key={index} className="d-flex flex-wrap align-items-center justify-content-center gap-5">
                             <Box className="team-col">
                                 <img src={items.team.images[0]} alt="Team People"/>
                                 <Box className="inner-typography">
@@ -44,7 +44,7 @@ export default function Team(){
                                     <Typography className="team-proffession">{items.team.proffession[3]}</Typography>
                                 </Box>
                             </Box>
-                        </>
+                        </Box>
                     )
                 })}
             </Box>

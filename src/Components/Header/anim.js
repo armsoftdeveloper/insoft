@@ -2,7 +2,7 @@ import jQuery from "jquery";
 jQuery(function(){
     jQuery(window).bind("scroll.alert", function() {
         var jQuerythis = jQuery(this);
-        if (jQuerythis.scrollTop() >= 1) {
+        if (jQuerythis.scrollTop() >= 100) {
             jQuery('.anim-lists').css({"position":"fixed","top":"auto"});
             jQuery('.anim-color').css({color:"black"})
             jQuery('.anim-lists').css({background:"#fefefe"})

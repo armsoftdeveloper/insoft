@@ -15,11 +15,11 @@ export default function Team(){
             <Box className="inner-customers mt-5">
             {data.article[0].customers[0].images.map((items,index)=>{
                 return (
-                        <>
+                        <Box key={index}>
                             <Box className="customers-col">
                                 <img src={items} alt="Team People"/>
                             </Box>
-                        </>
+                        </Box>
                     )
                 })}
             </Box>

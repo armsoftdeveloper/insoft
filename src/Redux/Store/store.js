@@ -72,8 +72,7 @@ const initialState = {
                 title:"WHY CHOOSE US?",
                 titleBottom:"Safeguard your brand with Cyber-Security & IT Solutions",
                 text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                spansTop:["remote it assistance","practice It managment","managed it service"],
-                spansBottom:["solving it problems","it security services","cloud services"],
+                spansTop:["remote it assistance","practice It managment","managed it service","solving it problems"],
                 image:whyChooseUs
             }
         ],
@@ -82,8 +81,7 @@ const initialState = {
                 title:"WHY TRUST US?",
                 titleBottom:"Achieve digital transformation for your retail business services",
                 text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                spansTop:["protect your bussiness","network security","data security"],
-                spansBottom:["small bussiness owners","running your bussiness","network monitoring"],
+                spansTop:["protect your bussiness","network security","data security","network monitoring"],
                 image:whyTrustUs
             }
         ],

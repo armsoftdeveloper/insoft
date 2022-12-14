@@ -22,10 +22,36 @@ export default function Slider(){
             <Swiper
                 spaceBetween={80}
                 slidesPerView={3}
-                onSlideChange={() => console.log('slide change')}
-                onSwiper={(swiper) => console.log(swiper)}
                 className="slider-parent"
                 breakpoints={{
+                    303: {
+                        slidesPerView: 1,
+                        spaceBetween: 10     
+                      },
+                    304: {
+                      slidesPerView: 1,
+                      spaceBetween: 10     
+                    },
+                    305: {
+                      slidesPerView: 1,
+                      spaceBetween: 10     
+                    },
+                    306: {
+                      slidesPerView: 1,
+                      spaceBetween: 10     
+                    },
+                    307: {
+                      slidesPerView: 1,
+                      spaceBetween: 10     
+                    },
+                    308: {
+                      slidesPerView: 1,
+                      spaceBetween: 10     
+                    },
+                    309: {
+                      slidesPerView: 1,
+                      spaceBetween: 10     
+                    },
                     310: {
                         slidesPerView: 1,
                         spaceBetween: 10     
@@ -75,18 +101,22 @@ export default function Slider(){
                         spaceBetween: 75
                     },
                     768: {
-                        slidesPerView: 2,
-                        spaceBetween: 40
+                        slidesPerView: 1,
+                        spaceBetween: 100
                     },
                     992: {
-                        slidesPerView:3,
-                        spaceBetween: 40
+                        slidesPerView:1,
+                        spaceBetween: 100
+                    },
+                    1024:{
+                        slidesPerView:2,
+                        spaceBetween: 100
                     }
                   }}
             >
-                {data.article[0].slider.map((items)=>{
+                {data.article[0].slider.map((items,index)=>{
                     return(
-                        <>
+                        <Box key={index}>
                             <SwiperSlide>
                                 <Box className="inner-slide-component">
                                     <Rating name="simple-controlled" value={value}
@@ -159,7 +189,7 @@ export default function Slider(){
                                     />
                                 </Box>
                             </SwiperSlide>
-                        </>
+                        </Box>
                     )
                 })}
             </Swiper>

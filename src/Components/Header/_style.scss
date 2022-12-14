@@ -7,7 +7,10 @@ header{
     .header-top{
         background: linear-gradient(to bottom, #370b6f, #00429b, #006dba, #0095ce, #2dbcdc);
         display: flex;
+        border: none !important;
         flex-direction: column;
+        height: auto;
+        padding-bottom: 120px !important;
         .logo{
             color: #fff;
             font-size: 36px;
@@ -15,6 +18,9 @@ header{
             font-family: 'Paytone One', sans-serif;
             font-family: 'Source Sans Pro', sans-serif;
             cursor: pointer;
+        }
+        .logo-logo{
+            height: 35px !important;
         }
         .lists{
             padding: 15px !important;
@@ -69,6 +75,10 @@ header{
     }
     .visible-container{
         display: flex;
+        position: fixed;
+        width: 100%;
+        z-index: 15;
+        top: 79px;
         align-items: center;
         flex-direction: column;
         grid-gap: 15px;
@@ -110,9 +120,12 @@ header{
         display: none !important;
     }
     .header-bottom-image{
-        margin-top: -145px !important;
+        position: relative;
+        top: -103px;
         .wave{
             width: 100% !important;
+            height: 200px;
+            transform: rotate(180deg);
         }
     }
 }

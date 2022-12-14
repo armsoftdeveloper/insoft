@@ -31,25 +31,25 @@ export default function Company(){
                 <Box className="typography-container">
                     {data.article.map((items,index)=>{
                         return (
-                            <>
-                                <Typography className="title-top" key={index}>
+                            <Box key={index}>
+                                <Typography className="title-top">
                                     {items.aboutCompany[0].title}
                                 </Typography>
-                                <Typography className="title-bottom" key={index}>
+                                <Typography className="title-bottom">
                                     {items.aboutCompany[0].titleBottom}
                                 </Typography>
-                                <Typography className="typography" key={index}>
+                                <Typography className="typography">
                                     {items.aboutCompany[0].typography}
                                 </Typography>
-                            </>
+                            </Box>
                         )
                     })}
                 </Box>
                 <Box className="progress-bar">
                     {data.article.map((items,index)=>{
                         return(
-                            <>
-                                <Box className="progress-item" key={index}>
+                            <Box key={index}>
+                                <Box className="progress-item">
                                     <Box className="inner-progress">
                                         <Typography className="name">
                                             {items.aboutCompany[1].names[0]}
@@ -58,9 +58,9 @@ export default function Company(){
                                             {items.aboutCompany[1].progressProcent[0]}
                                         </Typography>
                                     </Box>
-                                    <BorderLinearProgress variant="determinate" value={items.aboutCompany[1].progress[0]} />
+                                    <BorderLinearProgress variant="determinate" value={items.aboutCompany[1].progress[0]}/>
                                 </Box>
-                                <Box className="progress-item" key={index}>
+                                <Box className="progress-item">
                                     <Box className="inner-progress">
                                         <Typography className="name">
                                             {items.aboutCompany[1].names[1]}
@@ -71,7 +71,7 @@ export default function Company(){
                                     </Box>
                                     <BorderLinearProgress variant="determinate" value={items.aboutCompany[1].progress[1]} />
                                 </Box>
-                                <Box className="progress-item" key={index}>
+                                <Box className="progress-item">
                                     <Box className="inner-progress">
                                         <Typography className="name">
                                             {items.aboutCompany[1].names[2]}
@@ -83,7 +83,7 @@ export default function Company(){
                                     <BorderLinearProgress variant="determinate" value={items.aboutCompany[1].progress[2]} />
                                 </Box>
                                 <Button>Learn More</Button>
-                            </>
+                            </Box>
                         )
                     })}
                 </Box>
@@ -92,7 +92,7 @@ export default function Company(){
                 <Box className="inner-image-container">
                     {data.article.map((items,index)=>{
                         return(
-                            <img src={items.aboutCompany[2].image[0]}/>
+                            <img src={items.aboutCompany[2].image[0]} key={index}/>
                         )
                     })}
                 </Box>

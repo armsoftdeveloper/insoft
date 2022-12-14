@@ -17,11 +17,11 @@ export default function Main(){
                 <Box className="typography">
                     {data.main.map((items,index)=>{
                         return(
-                            <Box className="inner-typography">
-                                <Typography className="about-us-title" key={index}>
+                            <Box className="inner-typography" key={index}>
+                                <Typography className="about-us-title">
                                     {items.title}
                                 </Typography>
-                                <Typography className="about-us-text col-10" key={index}>
+                                <Typography className="about-us-text col-10">
                                     {items.text}
                                 </Typography>
                             </Box>
@@ -33,7 +33,7 @@ export default function Main(){
                     </Stack>
                 </Box>
                 <Box className="image-container container">
-                    <img src={Image} alt="About IT" className="img-fluid"/>
+                    <img src={Image} alt="About IT" className="img-fuid"/>
                 </Box>
             </Box>
         </main>

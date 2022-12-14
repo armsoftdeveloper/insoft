@@ -8,12 +8,15 @@ footer{
     align-items: center;
     justify-content: center;
     .inner-newsletter{
-        width: 90%;
+        width: 100%;
         margin-top: 55px !important;
         display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: flex-start;
+        grid-gap: 15px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
         .typography{
             .top-title{
                 margin-bottom: 14px !important;

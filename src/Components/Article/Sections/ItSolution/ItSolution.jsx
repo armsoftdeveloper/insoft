@@ -10,21 +10,20 @@ import Typography from '@mui/material/Typography';
 import { useSelector } from "react-redux";
 export default function ItSolution(){
     const data = useSelector((state) => state)
-    console.log(data.article[0].itSolution[0].blocks[1].images)
     return(
         <section className="it-solution container" id="services">
             <Container className="inner-it-solution" maxWidth="100">
                 <Box className="titles">
                     {data.article.map((items,index)=>{
                         return (
-                            <>
-                                <Typography className="title-top" key={index}>
+                            <Box key={index}>
+                                <Typography className="title-top">
                                     {items.itSolution[0].titles[0].titleTop}
                                 </Typography>
-                                <Typography className="title-bottom" key={index}>
+                                <Typography className="title-bottom">
                                     {items.itSolution[0].titles[0].titleBottom}
                                 </Typography>
-                            </>
+                            </Box>
                         )
                     })}
                 </Box>
@@ -33,7 +32,7 @@ export default function ItSolution(){
                         return (
                             <Box key={index} className="single-items-parent">
                                 <Box className="single-items">
-                                    <img src={items.itSolution[0].blocks[1].images[0]} alt="" className="img-fluid"/>
+                                    <img src={items.itSolution[0].blocks[1].images[0]} alt="It Solution" className="img-fluid"/>
                                     <Typography className="single-item-title">
                                         {items.itSolution[0].blocks[0].titles[0]}
                                     </Typography>
@@ -43,7 +42,7 @@ export default function ItSolution(){
                                     <Link>{items.itSolution[0].blocks[0].link[0]}</Link>
                                 </Box>
                                 <Box className="single-items">
-                                    <img src={items.itSolution[0].blocks[1].images[1]} alt="" className="img-fluid"/>
+                                    <img src={items.itSolution[0].blocks[1].images[1]} alt="It Solution" className="img-fluid"/>
                                     <Typography className="single-item-title">
                                         {items.itSolution[0].blocks[0].titles[1]}
                                     </Typography>
@@ -53,7 +52,7 @@ export default function ItSolution(){
                                     <Link>{items.itSolution[0].blocks[0].link[0]}</Link>
                                 </Box>
                                 <Box className="single-items">
-                                    <img src={items.itSolution[0].blocks[1].images[2]} alt="" className="img-fluid"/>
+                                    <img src={items.itSolution[0].blocks[1].images[2]} alt="It Solution" className="img-fluid"/>
                                     <Typography className="single-item-title">
                                         {items.itSolution[0].blocks[0].titles[2]}
                                     </Typography>
@@ -63,7 +62,7 @@ export default function ItSolution(){
                                     <Link>{items.itSolution[0].blocks[0].link[0]}</Link>
                                 </Box>
                                 <Box className="single-items">
-                                    <img src={items.itSolution[0].blocks[1].images[3]} alt="" className="img-fluid"/>
+                                    <img src={items.itSolution[0].blocks[1].images[3]} alt="It Solution" className="img-fluid"/>
                                     <Typography className="single-item-title">
                                         {items.itSolution[0].blocks[0].titles[3]}
                                     </Typography>
@@ -73,7 +72,7 @@ export default function ItSolution(){
                                     <Link>{items.itSolution[0].blocks[0].link[0]}</Link>
                                 </Box>
                                 <Box className="single-items">
-                                    <img src={items.itSolution[0].blocks[1].images[4]} alt="" className="img-fluid"/>
+                                    <img src={items.itSolution[0].blocks[1].images[4]} alt="It Solution" className="img-fluid"/>
                                     <Typography className="single-item-title">
                                         {items.itSolution[0].blocks[0].titles[4]}
                                     </Typography>
@@ -83,7 +82,7 @@ export default function ItSolution(){
                                     <Link>{items.itSolution[0].blocks[0].link[0]}</Link>
                                 </Box>
                                 <Box className="single-items">
-                                    <img src={items.itSolution[0].blocks[1].images[5]} alt="" className="img-fluid"/>
+                                    <img src={items.itSolution[0].blocks[1].images[5]} alt="It Solution" className="img-fluid"/>
                                     <Typography className="single-item-title">
                                         {items.itSolution[0].blocks[0].titles[5]}
                                     </Typography>

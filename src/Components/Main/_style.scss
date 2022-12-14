@@ -4,7 +4,6 @@ main{
     align-items: center;
     height: auto !important;
     flex-direction: column;
-    margin-top: 45px !important;
     color:#fff;
     .inner-main{
         display: flex;
@@ -52,13 +51,13 @@ main{
             display: flex;
             justify-content: center;
             img{
-                animation: my 3s linear infinite;
+                animation: imageAnim 3s linear infinite;
             }
         }
     }
 }
 /***** Animation *****/
-@keyframes my{
+@keyframes imageAnim{
     0%{
         position: relative;
         top: 0px;
@@ -84,6 +83,7 @@ main{
 @media (max-width:992px){
     main{
         .inner-main{
+            padding: 15px !important;
             flex-direction: column;
             display: flex;
             align-items: center !important;

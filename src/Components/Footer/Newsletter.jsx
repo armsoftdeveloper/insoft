@@ -15,7 +15,7 @@ export default function Newsletter(){
             </Box>
             <Box className="handling-control">
                 <Box className="input-col">
-                    <input class="form-control"/>
+                    <input className="form-control"/>
                 </Box>
                 <Button className="subscribe-button">Subscribe Now</Button>
             </Box>
