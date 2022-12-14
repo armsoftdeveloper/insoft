@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/armsoftdeveloper/insoft/static/css/main.3e099b66.css",
+    "main.js": "/armsoftdeveloper/insoft/static/js/main.15c17ee0.js",
+    "static/js/787.6697c736.chunk.js": "/armsoftdeveloper/insoft/static/js/787.6697c736.chunk.js",
+    "static/media/background.jpg": "/armsoftdeveloper/insoft/static/media/background.b9ef23e183d58efc9224.jpg",
+    "static/media/company.jpg": "/armsoftdeveloper/insoft/static/media/company.59232e678e9a62195600.jpg",
+    "static/media/download.png": "/armsoftdeveloper/insoft/static/media/download.777363dbcbb45a3c403a.png",
+    "static/media/team.png": "/armsoftdeveloper/insoft/static/media/team.cdc67539a280032c434a.png",
+    "static/media/working.png": "/armsoftdeveloper/insoft/static/media/working.d62be5bcb07af8d39a66.png",
+    "static/media/team-1.jpg": "/armsoftdeveloper/insoft/static/media/team-1.239aec1131aba22061da.jpg",
+    "static/media/client-6.png": "/armsoftdeveloper/insoft/static/media/client-6.02857717b755019e569b.png",
+    "static/media/adaptiving.png": "/armsoftdeveloper/insoft/static/media/adaptiving.d6133e11b1d672d35611.png",
+    "static/media/client-3.png": "/armsoftdeveloper/insoft/static/media/client-3.fa5804dd228f4e40f0ab.png",
+    "static/media/client-2.png": "/armsoftdeveloper/insoft/static/media/client-2.68bfd6e1b2f2c3160355.png",
+    "static/media/security.png": "/armsoftdeveloper/insoft/static/media/security.db79f808f9577266b6c3.png",
+    "static/media/wave.png": "/armsoftdeveloper/insoft/static/media/wave.79974927b0220a1ec837.png",
+    "static/media/calendar.png": "/armsoftdeveloper/insoft/static/media/calendar.35a6b5f10eb102b95f1c.png",
+    "static/media/client-8.png": "/armsoftdeveloper/insoft/static/media/client-8.8dca03eab97b69b5a2ec.png",
+    "static/media/client-1.png": "/armsoftdeveloper/insoft/static/media/client-1.3b583efdb431af70c58b.png",
+    "static/media/team-2.jpg": "/armsoftdeveloper/insoft/static/media/team-2.71e1de003efb356701e2.jpg",
+    "static/media/team-4.jpg": "/armsoftdeveloper/insoft/static/media/team-4.9dd8830bb45481511c1e.jpg",
+    "static/media/team-3.jpg": "/armsoftdeveloper/insoft/static/media/team-3.6121ec85203e6209b987.jpg",
+    "static/media/client-4.png": "/armsoftdeveloper/insoft/static/media/client-4.bdcba01c0c3b2b7287df.png",
+    "static/media/client-5.png": "/armsoftdeveloper/insoft/static/media/client-5.8b6c40f4bb809f7216b2.png",
+    "static/media/developming.png": "/armsoftdeveloper/insoft/static/media/developming.3ca41e56a7b766bf63a7.png",
+    "static/media/client-7.png": "/armsoftdeveloper/insoft/static/media/client-7.67dc511955d2df7dbee6.png",
+    "index.html": "/armsoftdeveloper/insoft/index.html",
+    "main.3e099b66.css.map": "/armsoftdeveloper/insoft/static/css/main.3e099b66.css.map",
+    "main.15c17ee0.js.map": "/armsoftdeveloper/insoft/static/js/main.15c17ee0.js.map",
+    "787.6697c736.chunk.js.map": "/armsoftdeveloper/insoft/static/js/787.6697c736.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3e099b66.css",
+    "static/js/main.15c17ee0.js"
+  ]
+}
